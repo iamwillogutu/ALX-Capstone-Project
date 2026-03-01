@@ -101,7 +101,11 @@ const Converter = () => {
 
       <button
         onClick={handleConvert}
-        className="w-full bg-blue-600 text-white py-3 rounded-xl hover:bg-blue-700 transition"
+        className="w-full text-white py-3 rounded-xl transition-transform transform hover:scale-105"
+          style={{
+            backgroundColor: '#0089d1',
+            transition: 'background-color 0.3s ease',
+          }}
       >
         {loading ? "Loading..." : "Get Exchange Rate"}
       </button>
